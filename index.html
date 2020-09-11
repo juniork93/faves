@@ -1,0 +1,83 @@
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<script>
+    $(document).ready(function(){
+        $("h4").addClass("btn btn-info btn-block");
+        $(".card").children().css("font-family", "cursive");
+        $("body").css("font-family", "sofia");
+        $("h3").css("background", "rgba(0, 20, 200, 0.5)")
+        $("#item1").click(function() {
+            $("#item1").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item1").addClass("animated hinge");
+        });
+        $("#item2").click(function() {
+            $("#item2").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item2").addClass("animated hinge");
+        });
+        $("#item3").click(function() {
+            $("#item3").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item3").addClass("animated hinge");
+        });
+        $("#item4").click(function() {
+            $("#item4").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item4").addClass("animated hinge");
+        });
+        $("#item5").click(function() {
+            $("#item5").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item5").addClass("animated hinge");
+        });
+        $("#item6").click(function() {
+            $("#item6").clone().removeClass("btn btn-info btn-block").appendTo("#chosen");
+            $("#item6").addClass("animated hinge");
+        });
+
+    });
+</script>
+<style>
+    #chosen{
+        margin: 0 auto;
+        height: 300px;
+        display: block;
+        border: 3px solid grey;
+        box-shadow: 3px 10px 20px rgba(0,0,0,0.5);
+        background: linear-gradient(180deg, lightskyblue, cadetblue, lightblue);
+    }
+</style>
+<h3>From the list below, select all items that Squash-e loves</h3>
+<div class="row">
+    <div class="card card-body bg-dark">
+        <div class="col-sm-5">
+            <h4 id="item1">Food</h4>
+        </div>
+        <div class="col-sm-5">
+            <h4 id="item2">Booze</h4>
+        </div>
+        <div class="col-sm-5">
+            <h4 id="item3">Coffee</h4>
+        </div>
+    </div>
+
+    <div class="card card-body bg-dark">
+        <div class="col-sm-5">
+            <h4 id="item4">Money</h4>
+        </div>
+        <div class="col-sm-5">
+            <h4 id="item5">Sex</h4>
+        </div>
+        <div class="col-sm-5">
+            <h4 id="item6">Carz</h4>
+        </div>
+    </div>
+</div><br>
+
+<h3>The selected items will be displayed bellow</h3>
+<div class="row">
+    <div  id="chosen" class="card card-body bg-light col-sm-3">
+
+    </div>
+</div>
+<h5 style="background-color: green">Your css to your html</h5>
